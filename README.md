@@ -1,7 +1,7 @@
 # 李谢怡 · AI 影像作品集
 
-网页代码、动画库和展示图片已上传。入口为 `index.html`；Windows 用户可使用 `启动预览.cmd`。
+本仓库包含网页代码、动画库、展示图片及影片。入口为 `index.html`；Windows 用户可使用 `启动预览.cmd`。
 
-三个视频文件尚未上传，因此影片暂时无法播放。原视频保存在本地 `prototype/assets` 的 bridge、dinghai 和 rotoscope 目录中，请按对应路径补充。较大的影片需要 Git LFS 或另外托管。
+影片使用 Git LFS 存储，克隆或更新仓库时需要安装 Git LFS 并下载大文件。GitHub Pages 不直接支持 Git LFS 文件，若使用 Pages 发布，请另行托管视频。
 
 本仓库为私人仓库。
