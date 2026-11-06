@@ -7,11 +7,11 @@
   <meta name="description" content="李谢怡的 AI 影像作品集：动画、三维与真人风格影像，及其背后的创作思路。">
   <title>李谢怡 · AI 影像创作者</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=resume-content-1">
+  <link rel="stylesheet" href="styles.css?v=long-home-1">
   <script src="vendor/gsap.min.js" defer></script>
   <script src="vendor/ScrollTrigger.min.js" defer></script>
   <script src="scene.js?v=star-orbits-1" defer></script>
-  <script src="app.js?v=portfolio-content-2" defer></script>
+  <script src="app.js?v=long-home-1" defer></script>
 </head>
 <body class="is-intro" data-view="home">
   <canvas id="kinetic-scene" aria-hidden="true"></canvas>
@@ -19,12 +19,12 @@
   <header class="site-header">
     <a class="brand" href="#home"><strong>李谢怡</strong><span class="brand-mark"></span><small>AI MOVING IMAGE</small></a>
     <nav aria-label="主导航">
+      <a href="#intro" data-nav="intro">开场页<small>INTRO</small></a>
       <a href="#home" data-nav="home">首页<small>HOME</small></a>
       <a href="#works" data-nav="works">作品<small>WORKS</small></a>
-      <a href="#about" data-nav="about">关于<small>ABOUT</small></a>
+      <a href="#personal" data-nav="personal">个人<small>PROFILE</small></a>
       <a href="#contact" data-nav="contact">联系<small>CONTACT</small></a>
     </nav>
-    <button class="motion-toggle" type="button" aria-pressed="true" aria-label="暂停持续动效"><span class="motion-icon" aria-hidden="true"></span><span class="motion-label">动效 开</span></button>
   </header>
 
   <section class="intro-screen" aria-label="作品集开场">
@@ -51,63 +51,21 @@
           <p class="eyebrow">PORTFOLIO / AI FILM</p>
           <h1 id="home-title" tabindex="-1">李谢怡</h1>
           <p class="role">AI 影像创作者</p>
-          <p class="role-en">AI FILMMAKER<br><span>VISUAL STORYTELLER</span></p>
+          <dl class="hero-details"><div><dt>院校与专业</dt><dd>江苏海洋大学 · 数字媒体艺术</dd></div><div><dt>教育阶段</dt><dd>2024—2028 · 本科在读</dd></div><div><dt>求职方向</dt><dd><span class="keep-phrase">AIGC 视频制作</span> / <span class="keep-phrase">AI 导演与编导</span> / <span class="keep-phrase">AI 视觉设计</span></dd></div></dl>
           <p class="hero-intro">以动画、三维与真人风格影像<br>探索不同画面语言中的故事。</p>
           <a class="main-cta" href="#works"><span>浏览作品</span><span aria-hidden="true">↗</span><small>ENTER SELECTED WORKS</small></a>
         </div>
         <div class="signal-field" aria-label="页面导览">
-          <a class="signal-link about-link" href="#about"><b>个人</b><small>ABOUT</small></a>
+          <a class="signal-link about-link" href="#personal"><b>个人</b><small>PROFILE</small></a>
           <a class="signal-link works-link" href="#works"><b>作品</b><small>WORKS</small></a>
           <a class="signal-link contact-link" href="#contact"><b>联系</b><small>CONTACT</small></a>
           <p class="signal-caption mono">IMAGE / FRAGMENTS</p>
         </div>
       </section>
-      <section class="home-info" id="about">
-        <p class="eyebrow">ABOUT / 关于</p>
-        <div class="resume-content">
-          <h2>让故事，成为影像。</h2>
-          <p>我是一名数字媒体艺术专业的本科在读学生，关注 AI 影视与动画创作。从分镜与角色画面到视频生成、剪辑和配乐，我希望让技术选择服务于故事表达。</p>
-          <p>求职方向：<span class="keep-phrase">AIGC 视频制作</span>、<span class="keep-phrase">AI 导演／编导</span>、<span class="keep-phrase">AI 视觉设计</span>。</p>
-          <a class="text-link" href="#works">查看创作项目 <span aria-hidden="true">↗</span></a>
-          <section class="resume-block" aria-labelledby="resume-education">
-            <h3 id="resume-education">教育经历</h3>
-            <div class="resume-heading"><h4>江苏海洋大学</h4><span>2024—2028</span></div>
-            <p>数字媒体艺术 · 本科在读 · 专业排名前 15%</p>
-            <p>主修动画分镜设计、剧本创作、After Effects 与 Premiere Pro。担任班长、社团社长。</p>
-          </section>
-          <section class="resume-block" aria-labelledby="resume-experience">
-            <h3 id="resume-experience">实习与项目协作</h3>
-            <div class="resume-heading"><h4>连云港东家智创文化传媒有限公司</h4><span>2026.06—2026.09</span></div>
-            <p class="resume-role">视觉设计师 · 实习</p>
-            <p>参与 AIGC 短剧、动画与 IP 设计工作，包括真人短剧出海转绘、真人风格微电影制作，以及角色、道具与主视觉辅助设计，承担视频剪辑与配乐工作。</p>
-            <a class="text-link" href="#project/rotoscope">查看独立完成的转绘试片 <span aria-hidden="true">↗</span></a>
-            <div class="resume-collaboration"><h4>《疾控探案》</h4><p>2025.10—2025.12，参与东家智创与连云港疾控中心项目，负责分镜画面生成与剪辑。</p></div>
-            <div class="resume-collaboration"><h4>《镜花缘》</h4><p>自 2026.01 起，以协作角色参与面向海州文旅的 AI 漫剧项目的部分制作，涉及分镜画面生成、角色设计、视频生成与剪辑。</p></div>
-          </section>
-          <section class="resume-block" aria-labelledby="resume-skills">
-            <h3 id="resume-skills">创作技能</h3>
-            <dl class="resume-skills">
-              <div><dt>影像生成</dt><dd>使用可灵、Seedance 2.0、Vidu 等工具开展视频生成与画风转换，根据镜头内容选择制作方法。</dd></div>
-              <div><dt>分镜与画面</dt><dd>结合分镜设计、视听语言和提示词组织画面，使用 Photoshop 修整生成结果与分镜素材。</dd></div>
-              <div><dt>剪辑与声画</dt><dd>使用 Premiere Pro、剪映完成镜头组接、转场和配乐；重视叙事节奏与情绪的连续性。</dd></div>
-            </dl>
-          </section>
-          <section class="resume-block" aria-labelledby="resume-honors">
-            <h3 id="resume-honors">获奖与荣誉</h3>
-            <ul class="resume-honors"><li><a href="#project/bridge">2026 中国大学生计算机设计大赛 · 数媒动画赛道国赛三等奖《赵州桥》</a></li><li>中国大学生好创意大赛 · 省一等奖</li><li>创意星球学院奖 · 优秀奖</li><li>校二等奖学金、优秀学生干部</li></ul>
-          </section>
-        </div>
-      </section>
-      <section class="home-info contact-info" id="contact">
-        <p class="eyebrow">CONTACT / 联系</p>
-        <div><h2>期待一起创作。</h2><p>关注 AI 影视与动画创作岗位<br>上海、杭州、北京 · 接受远程</p><address class="resume-contact"><a href="mailto:3455367166@qq.com"><span>邮箱</span>3455367166@qq.com</a><a href="tel:+8615392895493"><span>电话</span>153 9289 5493</a></address><button class="replay-intro text-link" type="button">重看开场 <span aria-hidden="true">↺</span></button></div>
-      </section>
-    </div>
-
-    <section class="view works-stage" id="view-works" hidden inert aria-labelledby="work-title">
+    <section class="works-stage" id="view-works" aria-labelledby="work-title">
       <div class="works-heading">
         <p class="eyebrow">SELECTED FILMS / 精选影像</p>
-        <h1 id="work-title" tabindex="-1">琥珀与翡翠</h1>
+        <h2 id="work-title" tabindex="-1">琥珀与翡翠</h2>
         <p class="work-type" id="work-type">01 / AI ANIMATION</p>
       </div>
       <div class="orbit" role="region" aria-roledescription="环绕轮播" aria-label="精选作品，可拖动或使用左右方向键" tabindex="0">
@@ -125,17 +83,59 @@
       </div>
       <div class="works-meta">
         <div class="work-summary"><div><span class="eyebrow">创作方向 / APPROACH</span><p id="work-idea"></p></div><div><span class="eyebrow">我的职责 / MY ROLE</span><p id="work-role"></p></div></div>
-        <div class="works-bottom"><span class="orbit-hint">拖动环绕 · 点击前景查看</span><button class="orbit-auto" type="button" aria-pressed="true">自动环绕 开</button><div class="progress-dots" aria-label="三个项目"><button type="button" aria-label="琥珀与翡翠" aria-current="true"></button><button type="button" aria-label="赵州桥"></button><button type="button" aria-label="定海"></button></div><span id="work-count">01 / 03</span></div>
+        <div class="works-bottom"><span class="orbit-hint">拖动环绕 · 点击任意作品查看</span><div class="progress-dots" aria-label="三个项目"><button type="button" aria-label="赵州桥" aria-current="true"></button><button type="button" aria-label="定海"></button><button type="button" aria-label="真人转绘"></button></div><span id="work-count">01 / 03</span></div>
       </div>
       <p class="sr-only" id="carousel-status" aria-live="polite" aria-atomic="true"></p>
     </section>
 
+    <section class="home-info" id="view-personal" aria-labelledby="personal-title">
+        <p class="eyebrow">PROFILE / 个人</p>
+        <div class="resume-content">
+          <h2 id="personal-title" tabindex="-1">让故事，成为影像。</h2>
+          <p>我是一名数字媒体艺术专业的本科在读学生，关注 AI 影视与动画创作。从分镜与角色画面到视频生成、剪辑和配乐，我希望让技术选择服务于故事表达。</p>
+          <p>求职方向：<span class="keep-phrase">AIGC 视频制作</span>、<span class="keep-phrase">AI 导演／编导</span>、<span class="keep-phrase">AI 视觉设计</span>。</p>
+          <a class="text-link" href="#works">查看创作项目 <span aria-hidden="true">↗</span></a>
+          <section class="resume-block" aria-labelledby="resume-education">
+            <h3 id="resume-education">教育经历</h3>
+            <div class="resume-heading"><h4>江苏海洋大学</h4><span>2024—2028</span></div>
+            <p>数字媒体艺术 · 本科在读 · 专业排名前 15%</p>
+            <p>主修动画分镜设计、剧本创作、After Effects 与 Premiere Pro。担任班长、社团社长。</p>
+          </section>
+          <section class="resume-block" aria-labelledby="resume-experience">
+            <h3 id="resume-experience">实习与项目协作</h3>
+            <div class="resume-heading"><h4>连云港东家智创文化传媒有限公司</h4><span>2026.06—2026.09</span></div>
+            <p class="resume-role">视觉设计师 · 实习</p>
+            <p>参与 AIGC 短剧、动画与 IP 设计工作，包括真人短剧出海转绘、真人风格微电影制作，以及角色、道具与主视觉辅助设计，承担视频剪辑与配乐工作。</p>
+            <p>真人转绘试片：针对已有真人短剧的出海画风需求，比较3种候选风格；发现五秒分段转绘的表演还原不稳后，改用首尾帧与表情提示词组织生成。独立完成约30个镜头、01:02竖屏试片；交付存在延迟，项目因预算与生成成本不匹配、工期受限未继续制作。</p>
+            <a class="text-link" href="#project/rotoscope">查看独立完成的转绘试片 <span aria-hidden="true">↗</span></a>
+            <div class="resume-collaboration"><h4>《疾控探案》</h4><p>2025.10—2025.12，参与东家智创与连云港疾控中心项目，负责分镜画面生成与剪辑。</p></div>
+            <div class="resume-collaboration"><h4>《镜花缘》</h4><p>自 2026.01 起，以协作角色参与面向海州文旅的 AI 漫剧项目的部分制作，涉及分镜画面生成、角色设计、视频生成与剪辑。</p></div>
+          </section>
+          <section class="resume-block" aria-labelledby="resume-skills">
+            <h3 id="resume-skills">创作技能</h3>
+            <dl class="resume-skills">
+              <div><dt>影像生成</dt><dd>使用可灵、Seedance 2.0、Vidu 等工具开展视频生成与画风转换，根据镜头内容选择制作方法。</dd></div>
+              <div><dt>分镜与画面</dt><dd>结合分镜设计、视听语言和提示词组织画面，使用 Photoshop 修整生成结果与分镜素材。</dd></div>
+              <div><dt>剪辑与声画</dt><dd>使用 Premiere Pro、剪映完成镜头组接、转场和配乐；重视叙事节奏与情绪的连续性。</dd></div>
+            </dl>
+          </section>
+          <section class="resume-block" aria-labelledby="resume-honors">
+            <h3 id="resume-honors">获奖与荣誉</h3>
+            <ul class="resume-honors"><li><a href="#project/bridge">2026 中国大学生计算机设计大赛 · 数媒动画赛道国赛三等奖《赵州桥》</a></li><li>中国大学生好创意大赛 · 省一等奖</li><li>创意星球学院奖 · 优秀奖</li><li>校二等奖学金、优秀学生干部</li></ul>
+          </section>
+        </div>
+    </section>
+    <section class="home-info contact-info" id="view-contact" aria-labelledby="contact-title">
+        <p class="eyebrow">CONTACT / 联系</p>
+        <div><h2 id="contact-title" tabindex="-1">期待一起创作。</h2><p>关注 AI 影视与动画创作岗位<br>上海、杭州、北京 · 接受远程</p><address class="resume-contact"><a href="mailto:3455367166@qq.com"><span>邮箱</span>3455367166@qq.com</a><a href="tel:+8615392895493"><span>电话</span>153 9289 5493</a></address><button class="replay-intro text-link" type="button">重看开场 <span aria-hidden="true">↺</span></button></div>
+    </section>
+
+    </div>
     <div class="view" id="view-project" hidden inert><div id="project-root"></div></div>
   </main>
   <noscript><p class="no-script">请启用 JavaScript 以浏览交互作品集。</p></noscript>
 </body>
 </html>
-
 
 
 

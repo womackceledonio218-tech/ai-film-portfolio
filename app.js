@@ -5,92 +5,61 @@ const projects = [
     type:'AI ANIMATION · COMPLETED',image:'assets/bridge/cover.webp',
     alt:'赵州桥动画成片中，工匠在脚手架间建设石拱桥',
     idea:'三维动画风格 · 古代匠人的造桥故事',
-    role:'导演与镜头组接 · 角色与主视觉 · AI视频制作 · 剪辑配乐',
-    lead:'以李春建造赵州桥为主线，用三维动画风格讲述古代匠人的造桥故事。通过角色、镜头与音乐的选择，让生成影像共同服务叙事。',
+    role:'约80%制作镜头（回忆估计） · 三个角色设计 · 剪辑配乐与导出',
+    lead:'三人团队制作的三维动画风格短片。画风重启后距提交仅剩一周，我负责视频制作、剪辑、配乐和最终导出，并设计李春、老石匠与阿柚三个主要角色。本人约承担80%的制作镜头，该比例为回忆估计。成片07:04，团队获江苏省赛特等奖、国赛三等奖。',
     leadTail:'共同服务叙事。',leadPhrases:['三维动画风格','古代匠人','角色','镜头','音乐'],status:'已完成 · 2026.04',
-    award:{title:'国赛三等奖',event:'2026 中国大学生计算机设计大赛',category:'数媒动画赛道'},
-    facts:[{label:'创作时间',value:'2026.04'},{label:'当前成片',value:'07:04'},{label:'影像形式',value:'AI三维风格动画'}],
+    award:{title:'国赛三等奖',event:'2026 中国大学生计算机设计大赛',category:'数媒动画赛道 · 江苏省赛特等奖'},
+    facts:[{label:'团队规模',value:'3人'},{label:'团队成片',value:'07:04'},{label:'个人制作镜头占比',value:'约80%（回忆估计）'}],
     film:{src:'assets/bridge/zhaozhou-bridge.mp4',duration:'07:04',
       summary:'影片围绕李春的造桥经历展开，以水患、营造实践及人物交流串联故事，呈现匠人面对造桥难题时的思考与选择。',
       chapters:[{time:15,label:'渡河困境'},{time:160,label:'工匠与设计'},{time:340,label:'桥梁营造'}]},
-    approach:'前期画风调整、不同分镜版本的冲突，以及有限的设计参考，让这个项目不断面临取舍。我的工作是把这些选择落实到人物、镜头与最终成片中。',
-    process:[
-      {image:'assets/bridge/visual-direction.webp',alt:'赵州桥项目中村落与水渠的视觉开发图',caption:'环境气氛 · 视觉开发素材',
-        title:'画风重启后的视觉设计',capability:'视觉方向 / VISUAL DIRECTION',
-        challenge:'原视觉方案未达到预期，角色、脚本和已生成片段都需要重新调整。',
-        decision:'团队讨论后转向三维动画风格。我承担角色与主视觉设计，并按新的视觉方向推进视频生成与制作。'},
-      {image:'assets/bridge/editing.webp',alt:'赵州桥成片中洪水冲击木桥的镜头',caption:'02:10 · 成片画面',
-        title:'分镜冲突中的镜头取舍',capability:'叙事与组接 / EDITORIAL JUDGMENT',
-        challenge:'不同版本的分镜在剧情编排上发生冲突，距离提交只剩一周。',
-        decision:'我对零散片段进行取舍与剪辑，围绕故事的推进重新组织镜头关系，将生成素材整合为可观看的叙事。'},
-      {image:'assets/bridge/visual-development.webp',alt:'赵州桥项目中李春伏案思考的视觉开发图',caption:'李春工作场景 · 视觉开发素材',
-        title:'参考有限时的人物塑造',capability:'角色设计 / CHARACTER DEVELOPMENT',keepPhrases:['李春','阿柚','老石匠'],
-        challenge:'项目可获取的人物、服饰与建筑参考有限，李春也缺少可直接采用的形象依据。',
-        decision:'我负责李春、阿柚与老石匠的角色设计，以故事需要和全片风格为依据塑造人物。李春的形象属于艺术化创作。'},
-      {image:'assets/bridge/sound-edit.webp',alt:'赵州桥成片中李春在蓝色梦境空间思考的画面',caption:'04:40 · 成片画面',
-        title:'用配乐完成声画表达',capability:'剪辑与声音 / PICTURE & SOUND',
-        challenge:'片段完成生成后，还需要通过剪辑与音乐建立段落节奏和情绪。',
-        decision:'我参与后期剪辑与配乐筛选，结合画面内容选择音乐，使影像片段形成连续的观看体验。'}
-    ],
+    approach:'围绕生成错误、桥体造型与赛前制作压力复盘。以下结果区分个人制作范围与团队成片、奖项，不把整体成果等同于单项方法的提升。',
+    process:[{"image":"assets/bridge/visual-development.webp","alt":"赵州桥项目李春的视觉开发素材","caption":"项目保留视觉素材，非生成错误与修复的对应对照","title":"修正模型无法稳定识别的角色与细节","capability":"角色设计与生成修正","challenge":"提示词正确时，生成结果仍可能出现人物重复、细节模糊、面孔趋同、场景与站位错误。","decision":"对有问题的图像先用Photoshop修正，再更换模型，以修正后的首帧继续生成；同时承担李春、老石匠与阿柚的角色设计。","result":"完成李春、老石匠、阿柚3个主要角色设计，并用于影片制作。"},{"image":"assets/bridge/cover.webp","alt":"影片中呈现赵州桥全貌的画面","caption":"团队成片抽帧；建桥过程的对应时间码待整理","title":"用局部操作镜头组织建桥过程","capability":"镜头取舍与蒙太奇叙事","challenge":"模型难以生成符合赵州桥现有造型的建设过程全景，持续生成大场景也不便修改。","decision":"改用工匠制作的局部细节镜头，通过蒙太奇推进建桥叙事，仅在最后关键大场景呈现赵州桥全景，集中处理桥体造型。","result":"建桥段落以工匠操作的局部镜头推进，最后呈现桥体全景，进入07:04团队成片。"},{"image":"assets/bridge/sound-edit.webp","alt":"赵州桥团队成片中的场景","caption":"团队成片画面","title":"在画风重启后的赛前一周整合成片","capability":"视频制作与声画整合","challenge":"三人团队在画风重启后距提交只剩一周，需要把生成片段整合成可观看、可提交的作品。","decision":"我承担视频制作、镜头剪辑、配乐与最终导出；另外两名成员负责剧本、PPT等文本材料。","result":"完成07:04团队成片；本人约承担80%的制作镜头（回忆估计）。团队获得2026中国大学生计算机设计大赛江苏省赛特等奖、国赛三等奖。"}],
     characters:[
       {name:'李春',image:'assets/bridge/lichun.webp',alt:'赵州桥动画中低头绘制图纸的李春',caption:'主角设计 · 成片画面'},
       {name:'阿柚',image:'assets/bridge/ayou.webp',alt:'赵州桥动画小女孩阿柚的角色视觉开发图',caption:'角色设计 · 视觉开发素材'},
       {name:'老石匠',image:'assets/bridge/old-craftsman.webp',alt:'赵州桥动画老石匠的角色视觉开发图',caption:'角色设计 · 视觉开发素材'}
     ],
-    mine:'导演与镜头组接、李春／阿柚／老石匠的角色设计、主视觉设计、AI视频生成与制作、后期剪辑及配乐筛选。',
-    team:'团队其他成员负责故事剧本创作、资料收集与物料制作。画风转向由团队讨论决定。',
+    mine:'本人约承担80%的制作镜头（回忆估计），负责李春、老石匠、阿柚三个角色设计，以及视频制作、剪辑、配乐与最终导出。',
+    team:'团队共3人；另外两名成员负责剧本、PPT等文本材料。07:04成片与省赛特等奖、国赛三等奖均为团队成果。',
     tools:'DeepSeek · 可灵 · Seedance 2.0',
-    takeaway:'这个项目体现了我在方案调整与时间约束下，围绕叙事进行视觉选择、镜头取舍和声画整合的能力。'
+    takeaway:'在画风重启后距提交一周的条件下，负责视频制作与后期整合；个人制作镜头占比约80%，为回忆估计，非逐镜精确统计。'
   },
-  {id:'journey',title:'定海',fullTitle:'西游灵器录 · 金箍棒的前世今生',type:'LIVE-ACTION STYLE · FANTASY',image:'assets/dinghai/cover.webp',alt:'定海项目中龙宫内的龙王与水族角色画面',idea:'真人风格奇幻微电影 · 孙悟空与金箍棒的故事',role:'约八分钟剧情片段制作 · 角色与场景设计 · 整体美术定调',lead:'以《西游记》为原型，讲述孙悟空与金箍棒的前世今生。我负责约八分钟剧情片段的制作、角色与场景设计，以及整体美术定调，重点处理传统角色的视觉辨识与复杂打斗中的空间关系。',leadPhrases:['孙悟空','金箍棒','约八分钟'],status:'团队作品已完成 · 制作周期两周',facts:[{label:'项目周期',value:'两周'},{label:'团队成片',value:'17:52'},{label:'个人制作范围',value:'约八分钟剧情片段'}],film:{src:'assets/dinghai/film.mp4',duration:'17:52',label:'团队成片',summary:'基于西游题材展开的真人风格奇幻微电影，围绕孙悟空与金箍棒的故事展开。此处展示团队完整成片；本人负责约八分钟剧情片段、角色与场景设计、整体美术定调，其他成员负责剩余部分视频生成及剪辑。个人镜头的精确时间码待进一步整理。',chapters:[{time:0,label:'从头观看团队成片'},{time:180,label:'03:00 画面定位'},{time:900,label:'15:00 画面定位'}]},approach:'从剧本中的角色文化特征和场景关系出发，先确定视觉方向，再思考人物走位、镜头编排与段落衔接。复杂打斗不仅需要动作画面，也需要让人物在空间中的位置有依据。',process:[
-    {image:'assets/dinghai/characters.webp',alt:'项目保留的孙悟空与少年龙王角色设计图',caption:'项目角色设计素材 · 并列展示，非迭代前后对比',title:'让传统角色具有明确辨识',capability:'角色设计与文化判断',challenge:'生成模型容易把猴子做成猩猩，或使龙王的角偏离中国龙的形象，削弱角色的文化辨识度。',decision:'我在角色设计中将猴子的形态与中国龙的角部特征作为重点约束，结合剧本考虑造型和整体画风，使角色设计围绕中国传统形象展开。'},
-    {image:'assets/dinghai/scene.webp',alt:'定海项目中蓝色龙宫的场景视觉设计',caption:'项目场景设计素材',title:'从剧本建立统一的美术方向',capability:'美术定调与场景设计',challenge:'故事跨越不同空间，单个场景的视觉效果需要与角色造型及相邻段落共同成立。',decision:'接到剧本后，我承担整体美术定调与角色、场景设计，并结合不同场景的衔接进行考虑，让视觉选择服务于人物和剧情。'},
-    {image:'assets/dinghai/blocking.webp',alt:'团队成片15分钟处的孙悟空与多名角色同框画面',caption:'15:00 · 团队成片抽帧，用于说明多人空间关系；非原始调度图',title:'生成之前先梳理走位与站位',capability:'场面调度与空间意识',challenge:'复杂打斗中，多人物的站位与行动方向容易出现偏移，影响动作的合理性和空间连续性。',decision:'我先画出大致调度图，对人物走位进行预演，再思考打斗如何编排，以及多人应该站在哪里，以此组织自己负责片段的镜头。'},
-    {image:'assets/dinghai/atmosphere.webp',alt:'定海项目中洞窟与水帘入口的场景画面',caption:'项目场景素材 · 原始调度草图尚未录入',title:'围绕负责段落组织剧情衔接',capability:'段落组织与团队协作',challenge:'团队分段制作时，个人片段需要在剧情和场景变化上与整片连接，而不只是独立的生成镜头。',decision:'我负责约八分钟剧情片段的编排与制作，在自己的制作范围内考虑剧情衔接、场景转换和角色位置；其他成员完成剩余视频生成与剪辑。'}
-  ],mine:'约八分钟剧情片段的制作与段落编排、角色与场景设计、整体美术定调；在负责段落中考虑人物走位预演与打斗镜头组织。',team:'其他成员负责剩余部分的视频生成以及剪辑。此处展示的是团队成片，不将全片剪辑与全部视频生成计入个人贡献。',tools:'Seedance 2.0 · 可灵 · GPT Image 2',takeaway:'把传统角色的文化特征、场景美术与人物走位转化为生成前的设计约束，在团队制作中承担明确的视觉与段落职责。'}
-  ,{id:'rotoscope',title:'真人转绘',fullTitle:'真人竖屏短剧的三维动画风格试片',type:'STYLE TRANSFER · COMMERCIAL PILOT',image:'assets/rotoscope/cover.webp',alt:'真人转绘试片中的两位女性角色与情绪表演',idea:'三天独立完成 · 面向海外的竖屏短剧商业试片',role:'需求理解 · 转绘流程探索 · 镜头修复 · 成片整合',lead:'将真人竖屏短剧转为三维卡通风格。面对表情失真、人物信息缺失和正反打生成困难，我按镜头特点组合直接转绘、参考帧再生成与特写替换，在三天内独立完成试片。',status:'商业试片已完成 · 独立制作',facts:[{label:'制作周期',value:'3天'},{label:'交付片长',value:'01:02'},{label:'呈现规格',value:'9:16 竖屏试片'}],film:{src:'assets/rotoscope/film.mp4',duration:'01:02',portrait:true,summary:'真人短剧情节的三维卡通风格转绘试片，展示人物对话、情绪表演与镜头组接。原真人视频为项目转绘输入，非本人实拍。',chapters:[{time:0,label:'从头观看'},{time:20,label:'人物情绪片段'},{time:40,label:'对话与组接片段'}]},approach:'先拆解甲方对画风和成片的要求，再判断每个镜头适合怎样的制作路径。对生成难以稳定完成的镜头，调整呈现方式，优先保证情绪表达与观看连贯性。',process:[
-    {image:'assets/rotoscope/direction.webp',alt:'项目保留的女性角色多角度设计素材',caption:'项目角色素材 · 用于呈现画风方向，非前后对比',title:'把客户要求转为制作路径',capability:'需求理解与独立执行',challenge:'甲方要求将真人短剧转为三维卡通画风，缺少可直接照搬的制作流程。',decision:'我独立理解需求、检索资料并探索制作方法，按镜头的表演复杂度拆分处理路径，完成从方法选择到成片的制作。'},
-    {image:'assets/rotoscope/emotion.webp',alt:'成片20秒与40秒处的人物情绪镜头',caption:'成片抽帧 · 00:20 / 00:40，非转绘前后对比',title:'按表演难度组合转绘方法',capability:'流程判断与情绪表达',challenge:'直接视频转绘容易让哭泣、愤怒等丰富表情变得僵硬。',decision:'对表情相对平缓的镜头使用可灵直接转绘；对情绪较强的镜头，先抽取画面做风格转换，再以转换后的参考帧和表情提示词生成视频。'},
-    {image:'assets/rotoscope/coverage.webp',alt:'成片10秒与30秒处的对话镜头',caption:'成片抽帧 · 00:10 / 00:30',title:'为失败镜头寻找可交付替代',capability:'镜头语言与问题解决',challenge:'实拍素材中人物信息不完整，AI对正反打和空间关系的理解也不稳定。',decision:'我尝试使用3D导演台辅助组织镜头；效果仍不理想时，补充特写并替换难以生成的镜头，以调整镜头方案继续推进交付。'},
-    {image:'assets/rotoscope/detail.webp',alt:'项目保留的手部与道具特写素材',caption:'项目过程素材 · 特写与局部画面，未标记为对应镜头的修复对照',title:'在时间限制下完成成片整合',capability:'交付意识与素材取舍',challenge:'试片需要在三天内完成，不能持续消耗时间在同一种失败的生成方式上。',decision:'我根据镜头效果切换制作方法、筛选可用素材并完成成片整合。最终提供约一分钟的竖屏商业试片，展示从需求到画面交付的完整执行能力。'}
-  ],mine:'独立承担甲方需求理解、制作方法探索、真人素材的风格转绘、复杂表情再生成、镜头替换与成片整合。',teamTail:'剧本',team:'本次试片由我独立制作。真人原片作为转绘输入；不将原片的剧本、演员表演与实拍工作计入个人贡献。',tools:'可灵 · 参考帧风格转换 · 3D导演台（具体产品待补）',takeaway:'以镜头结果为判断依据选择方法，在生成限制与三天交付周期之间作出取舍，独立推进从需求到成片的制作。'}
+  {"id":"journey","title":"定海","fullTitle":"西游灵器录 · 金箍棒的前世今生","type":"CG FANTASY","image":"assets/dinghai/cover.webp","alt":"定海团队成片中的龙宫画面","idea":"CG微电影 · 约50项资产设计与约4分钟对话段落制作","role":"全片约50项资产 · 约4分钟对话段落 · 构思与片段生成","lead":"围绕已有剧本向CG微电影的改编，完成全片所需约50项角色、场景与道具资产，并负责孙悟空与神铁对话的约4分钟片段。该段落所需的资产设计与片段生成在两个晚上完成；团队成片17:52，用于公司IP的线下宣传与销售展示。","status":"团队作品已完成 · 个人对话段落约4分钟","facts":[{"label":"个人资产产出","value":"约50项（全片合计）"},{"label":"个人片段","value":"约4分钟"},{"label":"该段落制作","value":"两个晚上（含相关资产）"}],"film":{"src":"assets/dinghai/film.mp4","duration":"17:52","label":"团队成片","summary":"此处展示17:52团队完整成片。本人负责全片所需约50项角色、场景及道具资产，以及孙悟空与神铁对话的约4分钟段落。该段落的资产与片段生成用两个晚上完成，不将全部50项资产归为这两个晚上的产出；其余片段由团队其他成员完成。作品用于公司IP的线下宣传与销售展示。","chapters":[{"time":0,"label":"从头观看团队成片"},{"time":180,"label":"03:00 画面定位"},{"time":900,"label":"15:00 画面定位"}]},"approach":"从剧本改编、资产构思与正反打空间关系三个问题复盘。资产总量、个人片段和团队成片分别标明，不把公司用途等同于可量化销售业绩。","process":[{"image":"assets/dinghai/characters.webp","alt":"定海项目的角色视觉设计素材","caption":"项目保留的角色素材，非风格候选完整对照","title":"把已有剧本转化为CG资产与视觉方向","capability":"视觉构思与资产设计","challenge":"已有剧本需要改编为微电影；角色需要有辨识度，避免猴子形态被生成得像猩猩。","decision":"尝试真人与CG两类方向，经小组讨论确定CG画风；依据剧本组织角色、场景和道具资产，并围绕角色特征开展设计。","result":"个人完成全片所需的角色、场景与道具资产，合计约50项。"},{"image":"assets/dinghai/scene.webp","alt":"定海龙宫场景视觉素材","caption":"项目场景设计素材，非对应镜头修复前后对照","title":"修正正反打中不一致的背景与动作","capability":"三维辅助与镜头修正","challenge":"生成正反打时可能出现人物位置正确但背景错误；角色动作也需要反复校正。","decision":"使用腾讯混元的3D模型，截取所需视角图像以替换错误背景；根据具体动作重新编写提示词，再生成片段。","result":"个人制作的单片段总生成次数不超过3次（含首次，据本人回忆）。"},{"image":"assets/dinghai/atmosphere.webp","alt":"定海项目保留的场景画面","caption":"项目场景素材，非对话段落的精确时间码定位","title":"在两个晚上完成个人对话段落","capability":"片段构思与制作交付","challenge":"时间紧，需要把孙悟空与神铁对话的构思落实为可用片段，并与团队成片衔接。","decision":"承担该段落的构思、相关资产设计与片段生成，根据角色动作和画面空间逐项调整。","result":"两个晚上完成约4分钟对话片段及该段落所需资产，最终随17:52团队成片用于公司IP的线下宣传与销售展示。"}],"mine":"个人完成全片约50项角色、场景、道具资产；负责孙悟空与神铁对话的约4分钟片段及构思、生成。两个晚上指该段落及其相关资产，不指全片所有资产的总工时。","team":"此处展示团队17:52成片，其余片段由其他成员完成。公司用于IP线下宣传与销售展示，不把影片总时长或公司销售成果计入个人独立业绩。","tools":"腾讯混元3D模型 · Seedance 2.0 · 可灵 · GPT Image 2","takeaway":"个人完成约50项全片资产与约4分钟对话片段；该段落及其相关资产用两个晚上完成，用于团队CG微电影的制作与公司IP展示。"}
+  ,{id:'rotoscope',title:'真人转绘',fullTitle:'真人竖屏短剧的三维动画风格试片',type:'STYLE TRANSFER · COMMERCIAL PILOT',image:'assets/rotoscope/cover.webp',alt:'真人转绘试片中的两位女性角色与情绪表演',idea:'三种画风探索 · 独立完成约30个镜头的转绘试片',role:'需求理解 · 转绘流程探索 · 镜头修复 · 成片整合',lead:'面向已有真人短剧的出海需求，比较三种画风并生成样图，经负责人确认采用三维卡通方向。初期五秒分段转绘出现表情、动作和口型识别不稳后，改用首尾帧与表情提示词组织生成，独立完成约30个镜头、01:02的试片。项目因预算不足以覆盖生成成本、工期受限未继续制作；此次交付存在延迟。',status:'试片已完成 · 独立制作 · 未继续制作',facts:[{label:'个人镜头量',value:'约30个'},{label:'交付片长',value:'01:02'},{label:'呈现规格',value:'9:16 竖屏试片'}],film:{src:'assets/rotoscope/film.mp4',duration:'01:02',portrait:true,summary:'真人短剧情节的三维卡通风格转绘试片，展示人物对话、情绪表演与镜头组接。原真人视频为项目转绘输入，非本人实拍。',chapters:[{time:0,label:'从头观看'},{time:20,label:'人物情绪片段'},{time:40,label:'对话与组接片段'}]},approach:'从画风选择、表演还原与生成成本三个问题复盘。试片完成能够说明执行范围；负责人对效果的反馈尚可，但时间和生成成本使项目未继续制作。',process:[{"image":"assets/rotoscope/direction.webp","alt":"转绘项目保留的角色画风素材","caption":"项目保留素材，非三种候选画风的完整对比","title":"先确定可执行的画风方向","capability":"需求理解与风格选择","challenge":"甲方希望将已有真人短剧转为适合海外内容的动画形式，制作前尚未确定画风。","decision":"参考海外受众常见风格，生成普通二次元、吉卜力风格二次元、迪士尼倾向三维卡通三种样图，以变形风险和表情演绎为判断依据，提交负责人选择。","result":"完成3种画风的样图探索，负责人确认采用三维卡通方向。"},{"image":"assets/rotoscope/emotion.webp","alt":"转绘试片中的情绪镜头","caption":"成片00:20与00:40抽帧，不作为修复前后对照","title":"为表演不稳定的片段更换方法","capability":"视频生成与方法调整","challenge":"按五秒与镜头切换拆分原片后，第二个五秒片段就出现表情、动作和口型识别不稳。","decision":"先按五秒片段尝试可灵转绘；发现问题后改用截取首尾帧、补充表情提示词的方式，引导角色表演。","result":"以调整后的方法继续制作，最终独立完成约30个镜头的试片。"},{"image":"assets/rotoscope/coverage.webp","alt":"试片中的人物对话镜头","caption":"成片00:10与00:30抽帧","title":"把试片结果与制作限制一并交代","capability":"成片整合与项目复盘","challenge":"甲方预算不足以覆盖生成费用，制作期间又穿插其他工作，交付时间受影响。","decision":"独立推进素材生成与成片整合，结合负责人对效果与成本的反馈复盘制作路径。","result":"完成01:02竖屏试片，交付存在延迟；负责人反馈效果尚可但成本偏高，项目未继续制作。"}],mine:'独立承担甲方需求理解、制作方法探索、真人素材的风格转绘、复杂表情再生成、镜头替换与成片整合。',teamTail:'剧本',team:'本次试片由我独立制作。真人原片作为转绘输入；不将原片的剧本、演员表演与实拍工作计入个人贡献。',tools:'可灵 · 参考帧风格转换 · 3D导演台（具体产品待补）',takeaway:'独立完成约30个镜头、01:02试片；此次交付延迟，项目因预算与生成成本不匹配、工期受限未继续制作。'}
 ];
+
+const projectOrder = ['bridge', 'journey', 'rotoscope', 'amber'];
+projects.sort((a, b) => projectOrder.indexOf(a.id) - projectOrder.indexOf(b.id));
 
 gsap.registerPlugin(ScrollTrigger);
 
-const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const finePointer = matchMedia('(hover: hover) and (pointer: fine)');
 const scene = new PortfolioScene(document.querySelector('#kinetic-scene'));
 const main = document.querySelector('.app-main');
 const intro = document.querySelector('.intro-screen');
-const motionButton = document.querySelector('.motion-toggle');
-const views = { home: document.querySelector('#view-home'), works: document.querySelector('#view-works'), project: document.querySelector('#view-project') };
+const views = { home: document.querySelector('#view-home'), project: document.querySelector('#view-project') };
 let introActive = true;
 let activeView = 'home';
 let activeProject = '';
-let motionChoice = null;
-try {
-  const saved = sessionStorage.getItem('portfolio.motion');
-  if (saved === 'on' || saved === 'off') motionChoice = saved;
-} catch {}
-let motionEnabled = !reducedMotion.matches;
+const motionEnabled = true;
 let transition = null;
 let introTimeline = null;
 let transitionVersion = 0;
 let scrollEffects = [];
-const revealed = new Set();
 
 const wrap = (value, count) => ((value % count) + count) % count;
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value));
 const ORBIT_POSITION_PER_SECOND = .4;
+const selectedProjects = projects.filter(project => !project.placeholder);
 
 // Repeat the project sequence around the ring while keeping one indicator per project.
-document.querySelector('.orbit-ring').innerHTML = [...projects, ...projects].map((project, slot) =>
+document.querySelector('.orbit-ring').innerHTML = [...selectedProjects, ...selectedProjects].map((project, slot) =>
   '<a class="orbit-card" data-slot="' + slot + '" href="#project/' + project.id + '"' + (slot ? ' tabindex="-1"' : '') + '><img src="' + project.image + '" alt="' + project.alt + '" width="1600" height="900" draggable="false"><span class="card-caption"><span>' + project.title + '</span><span>进入项目 ↗</span></span></a>'
 ).join('');
 const projectIndicators = document.querySelector('.progress-dots');
 projectIndicators.setAttribute('aria-label', '项目选择');
-projectIndicators.innerHTML = projects.map((project, index) => '<button type="button" aria-label="' + project.title + '"' + (index === 0 ? ' aria-current="true"' : '') + '></button>').join('');
+projectIndicators.innerHTML = selectedProjects.map((project, index) => '<button type="button" aria-label="' + project.title + '"' + (index === 0 ? ' aria-current="true"' : '') + '></button>').join('');
 
 class OrbitGallery {
   constructor(stage) {
@@ -109,38 +78,27 @@ class OrbitGallery {
     this.height = 400;
     this.lastInteraction = performance.now();
     this.suppressClickUntil = 0;
-    this.autoEnabled = true;
-    this.autoResumeRequested = false;
-    this.autoButton = document.querySelector('.orbit-auto');
     this.wheelTimer = 0;
     this.render = this.render.bind(this);
     new ResizeObserver(() => this.resize()).observe(stage);
     document.querySelector('.previous').addEventListener('click', () => this.step(-1));
     document.querySelector('.next').addEventListener('click', () => this.step(1));
-    this.autoButton.addEventListener('click', () => {
-      this.autoEnabled = !this.autoEnabled;
-      this.autoResumeRequested = this.autoEnabled;
-      this.lastInteraction = performance.now();
-      this.updateAutoButton();
-    });
     this.dots.forEach((dot, index) => dot.addEventListener('click', () => this.selectProject(index)));
-    const readingArea = stage;
-    readingArea.addEventListener('pointerenter', event => {
-      if (event.pointerType !== 'touch') this.hover = true;
-      this.autoResumeRequested = false;
-    });
+    const readingArea = document.querySelector('.works-stage');
     readingArea.addEventListener('pointerleave', () => {
       this.hover = false;
       this.lastInteraction = performance.now();
       stage.style.setProperty('--ring-x', '0deg');
       stage.style.setProperty('--ring-y', '0deg');
     });
+    readingArea.addEventListener('pointermove', event => {
+      if (event.pointerType !== 'touch') this.hover = Boolean(event.target.closest('.orbit-card,.work-summary'));
+    });
     readingArea.addEventListener('focusin', event => {
-      this.focused = event.target.matches('a,button,[tabindex="0"]');
-      if (!event.target.closest('.orbit-auto')) this.autoResumeRequested = false;
+      this.focused = event.target.matches('a,button,[tabindex="0"]') && event.target.matches(':focus-visible');
     });
     readingArea.addEventListener('focusout', event => {
-      this.focused = readingArea.contains(event.relatedTarget) && event.relatedTarget.matches('a,button,[tabindex="0"]');
+      this.focused = readingArea.contains(event.relatedTarget) && event.relatedTarget.matches('a,button,[tabindex="0"]') && event.relatedTarget.matches(':focus-visible');
       this.lastInteraction = performance.now();
     });
     stage.addEventListener('pointerdown', event => this.startDrag(event));
@@ -155,17 +113,10 @@ class OrbitGallery {
       if (performance.now() < this.suppressClickUntil) {
         event.preventDefault();
         event.stopPropagation();
-      } else if (card.dataset.front !== 'true') {
-        event.preventDefault();
-        event.stopPropagation();
-        const index = Number(card.dataset.slot);
-        this.pauseAuto();
-        const current = this.state.position;
-        this.moveTo(current + this.nearestOffset(index, current));
       }
     });
     gsap.ticker.add((time, deltaTime) => {
-      if (this.active && this.running && this.autoEnabled && !document.hidden && (this.autoResumeRequested || !this.hover && !this.focused) && !this.drag && !this.tween?.isActive()) {
+      if (this.active && this.running && !document.hidden && !this.hover && !this.focused && !this.drag && !this.tween?.isActive() && performance.now() - this.lastInteraction > 800) {
         this.state.position = wrap(this.state.position + Math.min(deltaTime / 1000, .05) * ORBIT_POSITION_PER_SECOND, this.cards.length);
         this.render();
       }
@@ -203,20 +154,22 @@ class OrbitGallery {
       card.querySelector('img').style.filter = 'brightness(' + (.24 + depth * .76).toFixed(3) + ')';
       card.dataset.front = String(index === front);
       card.tabIndex = index === front ? 0 : -1;
-      card.setAttribute('aria-label', index === front ? '进入' + projects[index % projects.length].title + '项目详情' : '旋转至' + projects[index % projects.length].title);
+      card.setAttribute('aria-label', '进入' + selectedProjects[index % selectedProjects.length].title + '项目详情');
     }
     if (this.slot !== front) this.updateInfo(front);
   }
 
   updateInfo(slot) {
     this.slot = slot;
-    const index = slot % projects.length;
-    const project = projects[index];
+    const index = slot % selectedProjects.length;
+    const project = selectedProjects[index];
     document.querySelector('#work-title').textContent = project.title;
-    document.querySelector('#work-type').textContent = '0' + (index + 1) + ' / ' + project.type;
+    document.querySelector('#work-type').textContent = project.film
+      ? project.film.duration + ' / ' + (project.film.label || '完整成片') + (project.award ? ' / ' + project.award.title : '')
+      : '进行中的动画项目';
     document.querySelector('#work-idea').textContent = project.idea;
     document.querySelector('#work-role').innerHTML = roleParts(project.role);
-    document.querySelector('#work-count').textContent = '0' + (index + 1) + ' / ' + String(projects.length).padStart(2, '0');
+    document.querySelector('#work-count').textContent = '0' + (index + 1) + ' / ' + String(selectedProjects.length).padStart(2, '0');
     this.dots.forEach((dot, i) => {
       if (i === index) dot.setAttribute('aria-current', 'true');
       else dot.removeAttribute('aria-current');
@@ -235,13 +188,13 @@ class OrbitGallery {
   }
 
   step(direction) {
-    this.pauseAuto();
+    this.holdAuto();
     this.moveTo(Math.round(this.state.position) + direction);
   }
 
   selectProject(index) {
-    this.pauseAuto();
-    const candidates = this.cards.map((_, i) => i).filter(i => i % projects.length === index);
+    this.holdAuto();
+    const candidates = this.cards.map((_, i) => i).filter(i => i % selectedProjects.length === index);
     const offset = candidates.map(i => this.nearestOffset(i, this.state.position)).sort((a, b) => Math.abs(a) - Math.abs(b))[0];
     this.moveTo(this.state.position + offset);
   }
@@ -260,7 +213,7 @@ class OrbitGallery {
         if (Math.abs(dy) > 12 && Math.abs(dy) > Math.abs(dx)) { this.drag = null; return; }
         if (Math.abs(dx) < 6 || Math.abs(dx) < Math.abs(dy)) return;
         drag.accepted = true;
-        this.pauseAuto();
+        this.holdAuto();
         this.tween?.kill();
         this.stage.setPointerCapture(event.pointerId);
         this.stage.classList.add('is-dragging');
@@ -301,7 +254,7 @@ class OrbitGallery {
     const delta = (Math.abs(event.deltaX) > Math.abs(event.deltaY) ? event.deltaX : event.deltaY) * (event.deltaMode === 1 ? 16 : 1);
     if (Math.abs(delta) < 1) return;
     event.preventDefault();
-    this.pauseAuto();
+    this.holdAuto();
     this.tween?.kill();
     this.lastInteraction = performance.now();
     this.state.position += clamp(delta / 180, -.8, .8);
@@ -312,6 +265,8 @@ class OrbitGallery {
 
   setActive(value) {
     this.active = value;
+    this.hover = false;
+    this.focused = false;
     this.lastInteraction = performance.now();
     if (!value) {
       this.tween?.kill();
@@ -325,24 +280,33 @@ class OrbitGallery {
     this.running = value;
     this.lastInteraction = performance.now();
     if (!value) this.moveTo(Math.round(this.state.position), true);
-    this.updateAutoButton();
   }
 
-  pauseAuto() {
-    this.autoEnabled = false;
-    this.autoResumeRequested = false;
-    this.updateAutoButton();
-  }
-
-  updateAutoButton() {
-    this.autoButton.setAttribute('aria-pressed', String(this.autoEnabled && this.running));
-    this.autoButton.textContent = this.autoEnabled && this.running ? '自动环绕 开' : '自动环绕 关';
-    this.autoButton.disabled = !this.running;
-    this.autoButton.title = this.running ? '阅读时暂停，手动选择后保持当前作品' : '请先开启全局动效';
+  holdAuto() {
+    this.lastInteraction = performance.now();
   }
 }
 
 const gallery = new OrbitGallery(document.querySelector('.orbit'));
+const homeSections = ['works', 'personal', 'contact'].map(name => ({ name, element: document.querySelector('#view-' + name) }));
+let homeScrollFrame = 0;
+function updateHomeScroll() {
+  homeScrollFrame = 0;
+  if (introActive || activeView !== 'home') return;
+  const headerHeight = document.querySelector('.site-header').offsetHeight;
+  const current = homeSections.filter(section => section.element.getBoundingClientRect().top <= headerHeight + 120).at(-1);
+  updateNav({ view: 'home', section: current?.name || '' });
+  const worksBounds = homeSections[0].element.getBoundingClientRect();
+  const visible = worksBounds.top < innerHeight && worksBounds.bottom > headerHeight;
+  if (gallery.active !== visible) gallery.setActive(visible);
+  const mode = current?.name === 'personal' || current?.name === 'contact' ? 'project' : current?.name === 'works' ? 'works' : 'home';
+  if (scene.mode !== mode) scene.setMode(mode, .5);
+}
+window.addEventListener('scroll', () => {
+  if (!homeScrollFrame) homeScrollFrame = requestAnimationFrame(updateHomeScroll);
+}, { passive: true });
+window.addEventListener('resize', updateHomeScroll);
+
 
 function readRoute() {
   const hash = location.hash.slice(1);
@@ -351,8 +315,9 @@ function readRoute() {
     const project = projects.find(item => item.id === parts[1]) || projects[0];
     return { view: 'project', id: project.id, section: parts[2] || '' };
   }
-  if (hash === 'works') return { view: 'works' };
-  return { view: 'home', section: hash === 'about' || hash === 'contact' ? hash : '' };
+  if (hash === 'about') return { view: 'home', section: 'personal' };
+  if (['works', 'personal', 'contact'].includes(hash)) return { view: 'home', section: hash };
+  return { view: 'home' };
 }
 
 function updateNav(route) {
@@ -411,7 +376,7 @@ function setupFilm() {
 function renderProject(id) {
   const project = projects.find(item => item.id === id) || projects[0];
   const index = projects.indexOf(project);
-  const next = projects[(index + 1) % projects.length];
+  const next = selectedProjects[(selectedProjects.indexOf(project) + 1) % selectedProjects.length];
   if (project.placeholder) {
     document.querySelector('#project-root').innerHTML = '<section class="project-hero" id="overview"><div><a class="project-kicker" href="#works">← 返回作品 / PROJECT 0' + (index + 1) + '</a><h1 tabindex="-1">' + project.title + '</h1><p class="project-small">项目资料整理中</p></div><div class="project-cover"><img src="' + project.image + '" alt="' + project.alt + '" width="1600" height="900"></div></section><a class="next-project" href="#project/' + next.id + '"><span><small>下一个项目 / NEXT FILM</small>' + next.title + '</span><span aria-hidden="true">↗</span></a>';
     document.title = project.title + ' · 李谢怡';
@@ -421,13 +386,13 @@ function renderProject(id) {
   const sectionLink = section => '#project/' + project.id + '/' + section;
   const lead = keepPhrases(project.lead, [project.leadTail, ...(project.leadPhrases || [])]);
   const team = keepPhrases(project.team, project.teamTail ? [project.teamTail] : []);
-  const process = project.process.map((item, i) => '<article class="process-item"><figure><img src="' + item.image + '" alt="' + (item.alt || project.title + '创作过程画面 ' + (i + 1)) + '" width="1600" height="900" loading="lazy">' + (item.caption ? '<figcaption>' + item.caption + '</figcaption>' : '') + '</figure><h3>0' + (i + 1) + ' / ' + item.title + '</h3>' + (item.challenge ? '<p><strong>问题</strong>' + keepPhrases(item.challenge, item.keepPhrases) + '</p><p><strong>我的处理</strong>' + keepPhrases(item.decision, item.keepPhrases) + '</p><span class="process-capability">' + item.capability + '</span>' : '<p>' + item.text + '</p>') + '</article>').join('');
+  const process = project.process.map((item, i) => '<article class="process-item"><figure><img src="' + item.image + '" alt="' + (item.alt || project.title + '创作过程画面 ' + (i + 1)) + '" width="1600" height="900" loading="lazy">' + (item.caption ? '<figcaption>' + item.caption + '</figcaption>' : '') + '</figure><h3>0' + (i + 1) + ' / ' + item.title + '</h3>' + (item.challenge ? '<p><strong>问题</strong>' + keepPhrases(item.challenge, item.keepPhrases) + '</p><p><strong>我的处理</strong>' + keepPhrases(item.decision, item.keepPhrases) + '</p>' + (item.result ? '<p class="process-result"><strong>结果</strong>' + item.result + '</p>' : '') + '<span class="process-capability">' + item.capability + '</span>' : '<p>' + item.text + '</p>') + '</article>').join('');
   const award = project.award ? '<p class="project-award"><span class="award-mark" aria-hidden="true"></span><span><strong>' + project.award.title + '</strong><small>' + project.award.event + '<br>' + project.award.category + '</small></span></p>' : '';
   const facts = project.facts ? '<dl class="project-facts">' + project.facts.map(fact => '<div><dt>' + fact.label + '</dt><dd>' + fact.value + '</dd></div>').join('') + '</dl>' : '';
   const characters = project.characters ? '<div class="character-study"><h3>角色视觉开发</h3><p>我负责李春、阿柚与老石匠的角色设计。以下展示成片画面与项目保留的视觉开发素材。</p><div class="character-grid">' + project.characters.map(character => '<figure><img src="' + character.image + '" alt="' + character.alt + '" width="1600" height="900" loading="lazy"><figcaption><strong>' + character.name + '</strong><span>' + character.caption + '</span></figcaption></figure>').join('') + '</div></div>' : '';
   document.querySelector('#project-root').innerHTML = [
-    '<section class="project-hero" id="overview"><div><a class="project-kicker" href="#works">← 返回作品 / PROJECT 0' + (index + 1) + '</a><h1 tabindex="-1">' + project.title + '</h1>' + (project.fullTitle ? '<p class="project-subtitle">' + project.fullTitle + '</p>' : '') + '<p class="project-lead">' + lead + '</p>' + award + '<p class="project-small">' + (project.award ? '' : project.status + '<br>') + '我的职责 / ' + roleParts(project.role) + '</p></div><div class="project-cover"><img src="' + project.image + '" alt="' + project.alt + '" width="1600" height="900" fetchpriority="high"></div>' + facts + '</section>',
-    '<nav class="project-tabs" aria-label="项目内容导航"><a href="' + sectionLink('overview') + '">概览 / OVERVIEW</a><a href="' + sectionLink('film') + '">片段 / FILM</a><a href="' + sectionLink('approach') + '">思路 / APPROACH</a><a href="' + sectionLink('credits') + '">职责 / ROLE</a></nav>',
+    '<section class="project-hero" id="overview"><div class="project-introduction"><a class="project-kicker" href="#works">← 返回作品 / PROJECT 0' + (index + 1) + '</a><h1 tabindex="-1">' + project.title + '</h1>' + (project.fullTitle ? '<p class="project-subtitle">' + project.fullTitle + '</p>' : '') + '<p class="project-lead">' + lead + '</p>' + award + '<p class="project-small">' + (project.award ? '' : project.status + '<br>') + '我的职责 / ' + roleParts(project.role) + '</p></div><a class="project-cover project-watch" href="' + sectionLink('film') + '" aria-label="前往观看《' + project.title + '》' + (project.film.label || '完整成片') + '"><img src="' + project.image + '" alt="' + project.alt + '" width="1600" height="900" fetchpriority="high"><span class="watch-label"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg><span>观看' + (project.film.label || '成片') + '</span><small>' + project.film.duration + '</small></span></a>' + facts + '</section>',
+    '<nav class="project-tabs" aria-label="项目内容导航"><a class="project-return" href="#works">← 返回作品</a><a href="' + sectionLink('overview') + '">概览 / OVERVIEW</a><a href="' + sectionLink('film') + '">片段 / FILM</a><a href="' + sectionLink('approach') + '">思路 / APPROACH</a><a href="' + sectionLink('credits') + '">职责 / ROLE</a></nav>',
     '<section class="project-section" id="film"><div class="section-heading"><span class="eyebrow">01 / FILM</span><div><h2>' + (project.film ? ('观看' + (project.film.label || '成片')) : '影像片段') + '</h2><p>' + project.idea + '</p></div></div>' + renderFilm(project) + '</section>',
     '<section class="project-section" id="approach"><div class="section-heading"><span class="eyebrow">02 / APPROACH</span><div><h2>创作思路与过程</h2><p>' + (project.approach || project.idea) + '</p></div></div><div class="process-grid">' + process + '</div>' + characters + '</section>',
     '<section class="project-section" id="credits"><div class="section-heading"><span class="eyebrow">03 / ROLE</span><div><h2>职责与合作</h2>' + (project.takeaway ? '<p>' + project.takeaway + '</p>' : '') + '</div></div><div class="facts"><div><span class="fact-label">个人工作 / MY CONTRIBUTION</span><p>' + project.mine + '</p></div><div><span class="fact-label">合作与来源 / TEAM</span><p>' + team + '</p></div></div>' + (project.tools ? '<p class="project-tools">制作工具 / ' + project.tools + '</p>' : '') + '</section>',
@@ -457,19 +422,7 @@ function setupScrollEffects() {
     });
   }
   if (!motionEnabled || introActive) { ScrollTrigger.refresh(); return; }
-  if (activeView === 'home') {
-    const timeline = gsap.to(scene.story, { progress: 1, duration: 1, ease: 'none', paused: true, onUpdate: () => { scene.dirty = true; } });
-    scrollEffects.push(ScrollTrigger.create({ trigger: '.home-hero', start: 'top top', end: 'bottom top', animation: timeline, scrub: .5 }));
-    document.querySelectorAll('.home-info').forEach(section => {
-      if (revealed.has(section.id)) return;
-      const elements = section.querySelectorAll('h2,p:not(.eyebrow),.text-link');
-      gsap.set(elements, { autoAlpha: 0, y: 16 });
-      scrollEffects.push(ScrollTrigger.create({ trigger: section, start: 'top 88%', once: true, onEnter: () => {
-        revealed.add(section.id);
-        gsap.to(elements, { autoAlpha: 1, y: 0, duration: .55, stagger: .06, ease: 'power3.out', clearProps: 'transform' });
-      } }));
-    });
-  } else if (activeView === 'project') {
+  if (activeView === 'project') {
     document.querySelectorAll('.project-section').forEach(section => {
       const elements = section.querySelectorAll('.section-heading,.process-item');
       gsap.set(elements, { autoAlpha: 0, y: 16 });
@@ -486,10 +439,10 @@ function setProjectTab(section) {
   });
 }
 
-function scrollToSection(section) {
+function scrollToSection(section, immediate = false) {
   if (!section) return;
-  const target = document.getElementById(section);
-  target?.scrollIntoView({ behavior: motionEnabled ? 'smooth' : 'instant', block: 'start' });
+  const target = document.getElementById(activeView === 'home' ? 'view-' + section : section);
+  target?.scrollIntoView({ behavior: immediate ? 'instant' : 'smooth', block: 'start' });
   if (activeView === 'project') setProjectTab(section);
 }
 
@@ -527,55 +480,32 @@ function showRoute(route, immediate = false) {
     Object.values(views).forEach(view => { view.hidden = true; view.inert = true; gsap.set(view, { clearProps: 'opacity,visibility,transform' }); });
     activeView = route.view;
     if (route.view === 'project') renderProject(route.id);
-    else document.title = route.view === 'works' ? '作品 · 李谢怡' : '李谢怡 · AI 影像创作者';
+    else document.title = ({ works: '作品 · 李谢怡', personal: '个人 · 李谢怡', contact: '联系 · 李谢怡' })[route.view] || '李谢怡 · AI 影像创作者';
     const incoming = views[activeView];
     incoming.hidden = false;
     incoming.inert = false;
     document.body.dataset.view = activeView;
     window.scrollTo({ top: 0, behavior: 'instant' });
     scene.setMode(activeView, immediate || !motionEnabled ? 0 : .6);
-    gallery.setActive(activeView === 'works');
     setupScrollEffects();
     const finish = () => {
       if (version !== transitionVersion) return;
       gsap.set(incoming, { clearProps: 'opacity,visibility,transform' });
-      if (route.section) scrollToSection(route.section);
+      if (route.section) scrollToSection(route.section, true);
       else incoming.querySelector('h1')?.focus({ preventScroll: true });
+      updateHomeScroll();
     };
     if (immediate || !motionEnabled) finish();
     else transition = gsap.fromTo(incoming, { autoAlpha: 0, y: 14 }, { autoAlpha: 1, y: 0, duration: .36, ease: 'power3.out', onComplete: finish });
   };
-  if (immediate || !motionEnabled) apply();
+  if (immediate || !motionEnabled || wasIntro) apply();
   else transition = gsap.to(outgoing, { autoAlpha: 0, y: -10, duration: .16, ease: 'power2.in', onComplete: apply });
 }
 
 function enterPortfolio() {
   if (!introActive) return;
-  introTimeline?.kill();
-  const duration = motionEnabled ? .9 : 0;
-  introActive = false;
-  document.body.classList.remove('is-intro');
-  main.inert = false;
-  intro.inert = true;
-  views.home.hidden = false;
-  views.home.inert = false;
-  activeView = 'home';
-  document.body.dataset.view = 'home';
   history.replaceState(null, '', '#home');
-  window.scrollTo({ top: 0, behavior: 'instant' });
-  scene.setMode('home', duration);
-  updateNav({ view: 'home' });
-  transition?.kill();
-  transition = gsap.timeline({ onComplete: () => {
-    intro.hidden = true;
-    document.querySelector('#home-title').focus({ preventScroll: true });
-    setupScrollEffects();
-    gsap.set('.identity-frame,.identity-frame>*:not(.corner),.signal-link', { clearProps: 'opacity,visibility,transform' });
-  } });
-  transition.to(intro, { autoAlpha: 0, duration: duration ? .28 : 0 }, 0);
-  transition.fromTo('.identity-frame', { autoAlpha: 0, y: 12 }, { autoAlpha: 1, y: 0, duration: duration ? .55 : 0, ease: 'power3.out' }, duration ? .15 : 0);
-  transition.fromTo('.identity-frame>*:not(.corner)', { autoAlpha: 0, y: 12 }, { autoAlpha: 1, y: 0, duration: duration ? .36 : 0, stagger: duration ? .045 : 0, ease: 'power3.out' }, duration ? .25 : 0);
-  transition.fromTo('.signal-link', { autoAlpha: 0 }, { autoAlpha: 1, duration: duration ? .3 : 0, stagger: duration ? .05 : 0 }, duration ? .45 : 0);
+  showRoute({ view: 'home' });
 }
 
 function replayIntro() {
@@ -595,42 +525,38 @@ function replayIntro() {
   intro.inert = false;
   gsap.set(intro, { autoAlpha: 1 });
   scene.setMode('intro', motionEnabled ? .7 : 0);
+  document.title = '开场页 · 李谢怡';
+  updateNav({ view: 'intro' });
   playIntroSequence();
   history.replaceState(null, '', '#intro');
   document.querySelector('.enter-button').focus({ preventScroll: true });
 }
 
-function applyMotionPreference() {
-  motionEnabled = motionChoice === null ? !reducedMotion.matches : motionChoice === 'on';
-  document.body.classList.toggle('motion-paused', !motionEnabled);
-  document.body.classList.toggle('motion-enabled', motionEnabled);
-  motionButton.setAttribute('aria-pressed', String(motionEnabled));
-  motionButton.setAttribute('aria-label', motionEnabled ? '暂停持续动效' : '开启动效');
-  motionButton.title = motionChoice === null && reducedMotion.matches ? '当前遵循系统减少动态效果，点击可主动开启' : '点击切换动效，本次浏览中记住选择';
-  motionButton.disabled = false;
-  document.querySelector('.motion-label').textContent = motionEnabled ? '动效 开' : '动效 关';
-  scene.setRunning(motionEnabled);
-  gallery.setRunning(motionEnabled);
-  if (!motionEnabled) transition?.progress(1);
-  if (!motionEnabled) introTimeline?.progress(1);
-  setupScrollEffects();
-}
-
 document.querySelector('.enter-button').addEventListener('click', enterPortfolio);
 document.querySelector('.replay-intro').addEventListener('click', replayIntro);
-motionButton.addEventListener('click', () => {
-  motionChoice = motionEnabled ? 'off' : 'on';
-  try { sessionStorage.setItem('portfolio.motion', motionChoice); } catch {}
-  applyMotionPreference();
-});
-reducedMotion.addEventListener('change', applyMotionPreference);
 document.addEventListener('click', event => {
   const link = event.target.closest('a[href^="#"]');
   if (!link || event.defaultPrevented || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button !== 0) return;
   const href = link.getAttribute('href');
   event.preventDefault();
-  if (introActive && href === '#home') { enterPortfolio(); return; }
-  if (location.hash === href) showRoute(readRoute());
+  if (link.matches('.project-watch')) {
+    const video = document.querySelector('#project-root video');
+    if (!video) return;
+    const status = document.querySelector('#film-status');
+    video.play().then(() => {
+      if (activeView !== 'project' || !video.isConnected || video.closest('.view').inert) video.pause();
+    }).catch(() => { status.textContent = '请点击播放器继续播放，或单独打开影片。'; });
+    video.scrollIntoView({ behavior: 'instant', block: 'center' });
+    video.focus({ preventScroll: true });
+    return;
+  }
+  if (activeView === 'project' && href.startsWith('#project/' + activeProject + '/')) {
+    history.replaceState(null, '', href);
+    scrollToSection(readRoute().section);
+    return;
+  }
+  if (location.hash === href && href === '#intro') replayIntro();
+  else if (location.hash === href) showRoute(readRoute());
   else location.hash = href;
 });
 window.addEventListener('hashchange', () => {
@@ -651,7 +577,7 @@ document.addEventListener('keydown', event => {
   if (introActive && (event.key === 'Enter' && !event.target.closest('button,a') || event.key === 'Escape' || event.key === 'ArrowDown')) {
     event.preventDefault();
     enterPortfolio();
-  } else if (!introActive && activeView === 'works' && !event.altKey && !event.metaKey && !event.ctrlKey) {
+  } else if (!introActive && activeView === 'home' && gallery.active && !event.altKey && !event.metaKey && !event.ctrlKey) {
     if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') {
       event.preventDefault();
       gallery.step(event.key === 'ArrowRight' ? 1 : -1);
@@ -677,10 +603,13 @@ function playIntroSequence() {
   introTimeline.fromTo('.intro-entry', { opacity: .25 }, { opacity: 1, duration: .65 }, 1.65);
 }
 
-applyMotionPreference();
+document.body.classList.add('motion-enabled');
+scene.setRunning(true);
+gallery.setRunning(true);
 if (location.hash && location.hash !== '#intro') showRoute(readRoute(), true);
 else {
+  document.title = '开场页 · 李谢怡';
+  updateNav({ view: 'intro' });
   scene.setMode('intro', 0);
   playIntroSequence();
 }
-
